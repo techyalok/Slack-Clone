@@ -28,7 +28,7 @@ document.getElementById('signupForm')?.addEventListener('submit', function(event
     const password = document.getElementById('signupPassword').value;
     users.push({ username, password });
     alert('Signup successful! Please login.');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 });
 
 // Login
@@ -48,7 +48,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function(event)
 // Logout
 document.getElementById('logoutButton')?.addEventListener('click', function() {
     sessionStorage.removeItem('currentUser');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
 });
 
 // Create Channel
