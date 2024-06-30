@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Messages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Direct Messages</h1>
+        <button id="logoutButton">Logout</button>
+        <div id="notificationBar" style="display: none;"></div>
+        <div id="notificationBar" style="display: none;" ></div>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search...">
+            <button class="search-icon">&#128269;</button> 
+        </div>
+        <div id="searchResults" class="search-results"></div>
+    </header>
+    <div class="dm-container">
+        <h2>Send a Direct Message</h2>
+        <form id="sendDMForm">
+            <input type="text" id="dmRecipient" placeholder="Recipient Username" required>
+            <input type="text" id="dmMessage" placeholder="Your Message" required>
+            <button type="submit">Send</button>
+        </form>
+        <div id="dmList"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

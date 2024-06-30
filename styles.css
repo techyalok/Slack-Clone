@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-container, .channel-container, .message-container, .dm-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.dm-container h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#logoutButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#notificationBar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Updated search container */
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px; 
+    margin-left: 20px; 
+}
+
+#searchBar {
+    width: 300px; 
+    padding: 10px;
+    padding-right: 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px; 
+    color: #aaa;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.message-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.message-button:hover {
+    background-color: #0056b3;
+}
+
+.search-results {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-results div {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-results div:last-child {
+    border-bottom: none;
+}
